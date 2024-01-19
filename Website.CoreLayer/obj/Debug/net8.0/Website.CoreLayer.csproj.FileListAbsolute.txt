@@ -1,0 +1,15 @@
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\bin\Debug\net8.0\Website.CoreLayer.deps.json
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\bin\Debug\net8.0\Website.CoreLayer.dll
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\bin\Debug\net8.0\Website.CoreLayer.pdb
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.AssemblyInfoInputs.cache
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.AssemblyInfo.cs
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.dll
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\refint\Website.CoreLayer.dll
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.pdb
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\ref\Website.CoreLayer.dll
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\bin\Debug\net8.0\Website.DataLayer.dll
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\bin\Debug\net8.0\Website.DataLayer.pdb
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.csproj.AssemblyReference.cache
+C:\Users\ALIREZA\Desktop\WebSite_All\Website.CoreLayer\obj\Debug\net8.0\Website.CoreLayer.csproj.CopyComplete

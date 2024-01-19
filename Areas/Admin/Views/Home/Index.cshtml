@@ -1,0 +1,54 @@
+﻿@model List<Website.CoreLayer.DTOs.ContactUsDto>
+@{
+    ViewData["title"] = "کامنت ها";
+    ViewData["selected"] = "products";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="Admin" asp-controller="Products" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a></li>
+
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    
+
+    <div class="box box-primary">
+        <div class="box box-body">
+            <table class="table table-border table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>نام </th>
+                        <th>ایمیل</th>
+                        <th>شماره تلفن</th>
+                        <th>پیام</th>
+                        
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@counter</td>
+                            <td>@item.Name</td>
+                            <td>@item.Email</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>@item.Description</td>
+                           
+
+                        </tr>
+                        counter++;
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+﻿@model WebSite.Areas.Admin.Models.ProductsModels.AddProductViewModel
+@{
+    ViewData["title"] = "افزودن دسته بندی";
+    ViewData["selected"] = "products";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li><a asp-area="Admin" asp-controller="Products" asp-action="Index">دسته بندی ها</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+ <section class="content">
+     <form class="box box-danger" method="post" asp-area="Admin" asp-controller="Products" asp-action="Add">
+         <div class="box-body row">
+             <div class="col-md-6">
+                @Html.EditorFor(m=>m.Name);
+             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.EditorFor(m => m.Price);
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="type"></label>
+                    <input asp-for="type" class="form-control" />
+                    <p>1 برای گردنبند/ 2 برای دستبند/3 برای انگشتر</p>
+                    <span asp-validation-for="type"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.Pathphoto);
+            </div>
+            
+
+         </div>
+         <div class="box-footer">
+             <button class="btn btn-success" type="submit">ثبت محصول</button>
+         </div>
+     </form>
+
+ </section>

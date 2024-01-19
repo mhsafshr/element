@@ -1,0 +1,56 @@
+﻿@model List<Website.CoreLayer.DTOs.ProductsDto>
+@{
+    ViewData["title"] = "محصولات";
+    ViewData["selected"] = "products";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-area="Admin" asp-controller="Products" asp-action="Index"><i class="fa fa-dashboard"></i> خانه</a></li>
+        
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <a class="btn btn-success mb-2"  asp-area="Admin" asp-controller="Products" asp-action="Add">افزودن محصول</a>
+     
+    <div class="box box-primary">
+        <div class="box box-body">
+            <table class="table table-border table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>نام محصول</th>
+                        <th>قیمت محصول</th>
+                        <th>دسته بندی</th>
+                        <th>تصویر</th>
+                        <th>عملیات</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@counter</td>
+                            <td>@item.Name</td>
+                            <td>@item.Price</td>
+                            <td>@item.Type</td>
+                            <td>@item.Pathphoto</td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-sm">ویرایش</a>
+                            </td>
+
+                        </tr> 
+                        counter++;
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+</div>
+</section>
